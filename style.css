@@ -1,0 +1,82 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+    }
+
+    header {
+      background-color: #1b6ca8;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    #contactForm{
+        text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    form, .todo, .gallery {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .todo{
+        text-align: center;
+    }
+
+    form input, form button, .gallery input, .gallery button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .todo ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .todo li {
+      background: #e0f7fa;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .gallery{
+        text-align: center;
+        align-items: center;
+    }
+
+    .gallery img {
+      width: 100px;
+      height: auto;
+      margin: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
